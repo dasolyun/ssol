@@ -1,0 +1,396 @@
+﻿$.ajax({
+        method: "GET",
+        url: "https://dapi.kakao.com/v3/search/book?target=title",
+        data: {
+            query: "CSS3"
+        },
+        headers: {
+            Authorization: "KakaoAK 5fbb93db070c5b2131d6bb6d20a34376"
+        }
+    })
+    .done(function (msg) {
+
+        console.log(msg.documents[1].title);
+        console.log(msg.documents[1].thumbnail);
+
+
+
+
+
+
+
+        // for문 (8개)
+        var divs = document.getElementsByClassName('slider_thumbnail_img');
+
+        for (var i = 0; i < divs.length; i++) {
+
+            $(".slider_thumbnail_img").eq(i).append("<img src='" + msg.documents[0].thumbnail + "'/>");
+
+
+
+        }
+
+
+
+    });
+
+
+$.ajax({
+        method: "GET",
+        url: "https://dapi.kakao.com/v3/search/book?target=title",
+        data: {
+            query: "css3"
+        },
+        headers: {
+            Authorization: "KakaoAK 5fbb93db070c5b2131d6bb6d20a34376"
+        }
+    })
+    .done(function (msg) {
+
+        console.log(msg.documents[1].title);
+        console.log(msg.documents[1].thumbnail);
+
+
+
+
+
+
+
+        // for문 (8개)
+        var divs = document.getElementsByClassName('slider_text_title');
+
+        for (var i = 0; i < divs.length; i++) {
+
+
+            $(".slider_text_title").eq(i).append("<h2>" + msg.documents[0].title + "</h2>");
+
+
+        }
+
+
+
+    });
+
+
+
+
+$.ajax({
+        method: "GET",
+        url: "https://dapi.kakao.com/v3/search/book?target=title",
+        data: {
+            query: "css3"
+        },
+        headers: {
+            Authorization: "KakaoAK 5fbb93db070c5b2131d6bb6d20a34376"
+        }
+    })
+    .done(function (msg) {
+
+        console.log(msg.documents[1].title);
+        console.log(msg.documents[1].thumbnail);
+
+
+
+
+
+
+
+        // for문 (8개)
+        var divs = document.getElementsByClassName('slider_text_authors1');
+
+        for (var i = 0; i < divs.length; i++) {
+
+
+            $(".slider_text_authors1").append("<p>" + "<span>" + "저자: " + "</span>" + msg.documents[0].authors[0] + "　|　" + "</p>");
+            $(".slider_text_authors1").append("<p>" + "<span>" + " 출판사: " + "</span>" + msg.documents[0].publisher + "　|　" + "</p>");
+            $(".slider_text_authors1").append("<p>" + "<span>" + "역자: " + "</span>" + msg.documents[0].translators + "</p>");
+        }
+
+
+
+    });
+
+
+
+
+$.ajax({
+        method: "GET",
+        url: "https://dapi.kakao.com/v3/search/book?target=title",
+        data: {
+            query: "css3"
+        },
+        headers: {
+            Authorization: "KakaoAK 5fbb93db070c5b2131d6bb6d20a34376"
+        }
+    })
+    .done(function (msg) {
+
+        console.log(msg.documents[1].title);
+        console.log(msg.documents[1].thumbnail);
+
+
+
+
+
+
+
+        // for문 (8개)
+        var divs = document.getElementsByClassName('slider_text_authors2');
+
+        for (var i = 0; i < divs.length; i++) {
+
+
+            $(".slider_text_authors2").append("<p>" + msg.documents[0].status + "　|　" + "</p>");
+            $(".slider_text_authors2").append("<p>" + msg.documents[0].datetime + "　|　" + "</p>");
+            $(".slider_text_authors2").append("<p>" + " ISBN-13: " + msg.documents[0].isbn + "</p>");
+
+        }
+
+
+
+    });
+
+
+$.ajax({
+        method: "GET",
+        url: "https://dapi.kakao.com/v3/search/book?target=title",
+        data: {
+            query: "css3"
+        },
+        headers: {
+            Authorization: "KakaoAK 5fbb93db070c5b2131d6bb6d20a34376"
+        }
+    })
+    .done(function (msg) {
+
+        console.log(msg.documents[1].title);
+        console.log(msg.documents[1].thumbnail);
+
+
+
+
+
+
+
+        // for문 (8개)
+        var divs = document.getElementsByClassName('slider_text_price1');
+
+        for (var i = 0; i < divs.length; i++) {
+
+
+            $(".slider_text_price1").append("<p>" + "정가　　　　" + "<span>" + msg.documents[0].price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + "</span>" + "원" + "</p>");
+
+        }
+
+
+
+    });
+
+$.ajax({
+        method: "GET",
+        url: "https://dapi.kakao.com/v3/search/book?target=title",
+        data: {
+            query: "css3"
+        },
+        headers: {
+            Authorization: "KakaoAK 5fbb93db070c5b2131d6bb6d20a34376"
+        }
+    })
+    .done(function (msg) {
+
+        console.log(msg.documents[1].title);
+        console.log(msg.documents[1].thumbnail);
+
+
+
+
+
+
+
+        // for문 (8개)
+        var divs = document.getElementsByClassName('slider_text_price2');
+
+        for (var i = 0; i < divs.length; i++) {
+
+
+            $(".slider_text_price2").append("<p>" + "판매가　　　" + "<span>" + msg.documents[0].sale_price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + "</span>" + "원" + "<span>" + " (10%할인)" + "</span>" + "</p>");
+
+        }
+
+
+
+    });
+
+
+$.ajax({
+        method: "GET",
+        url: "https://dapi.kakao.com/v3/search/book?target=title",
+        data: {
+            query: "포토샵"
+        },
+        headers: {
+            Authorization: "KakaoAK 5fbb93db070c5b2131d6bb6d20a34376"
+        }
+    })
+    .done(function (msg) {
+
+        console.log(msg.documents[1].title);
+        console.log(msg.documents[1].thumbnail);
+
+
+
+
+
+
+
+        // for문 (8개)
+        var divs = document.getElementsByClassName('s1_book_img');
+
+        for (var i = 0; i < divs.length; i++) {
+
+            $(".s1_book_img").eq(i).append("<img src='" + msg.documents[i].thumbnail + "'/>");
+
+
+
+        }
+
+
+
+    });
+
+
+
+
+
+
+$.ajax({
+        method: "GET",
+        url: "https://dapi.kakao.com/v3/search/book?target=title",
+        data: {
+            query: "포토샵"
+        },
+        headers: {
+            Authorization: "KakaoAK 5fbb93db070c5b2131d6bb6d20a34376"
+        }
+    })
+    .done(function (msg) {
+
+        console.log(msg.documents[1].title);
+        console.log(msg.documents[1].thumbnail);
+
+
+
+
+
+
+
+        // for문 (8개)
+        var divs = document.getElementsByClassName('s1_book_title');
+
+        for (var i = 0; i < divs.length; i++) {
+
+            $(".s1_book_title").eq(i).append("<h5>" + msg.documents[i].title + "</h5>");
+
+
+
+        }
+
+
+
+    });
+
+
+
+
+$.ajax({
+        method: "GET",
+        url: "https://dapi.kakao.com/v3/search/book?target=title",
+        data: {
+            query: "포토샵"
+        },
+        headers: {
+            Authorization: "KakaoAK 5fbb93db070c5b2131d6bb6d20a34376"
+        }
+    })
+    .done(function (msg) {
+
+        console.log(msg.documents[1].title);
+        console.log(msg.documents[1].thumbnail);
+
+
+
+
+
+
+
+        // for문 (8개)
+        var divs = document.getElementsByClassName('s1_book_publisher');
+
+        for (var i = 0; i < divs.length; i++) {
+
+
+            $(".s1_book_publisher").eq(i).append("<p>" + msg.documents[i].publisher + "</p>");
+
+
+
+        }
+
+
+
+    });
+
+
+
+$.ajax({
+        method: "GET",
+        url: "https://dapi.kakao.com/v3/search/book?target=title",
+        data: {
+            query: "css3"
+        },
+        headers: {
+            Authorization: "KakaoAK 5fbb93db070c5b2131d6bb6d20a34376"
+        }
+    })
+    .done(function (msg) {
+
+        console.log(msg.documents[1].title);
+        console.log(msg.documents[1].thumbnail);
+
+
+
+
+
+
+
+        // for문 (8개)
+        var divs = document.getElementsByClassName('section3_text');
+
+        for (var i = 0; i < divs.length; i++) {
+
+
+            $(".section3_text").eq(i).append("<p>" + msg.documents[i].contents + "</p>");
+
+
+
+        }
+
+
+
+    });
+
+
+     $(function(){
+
+        $.get("./sub_txt/txt1.txt", function(data) {
+
+          $(".section4_text").html(data);
+
+        })     
+
+
+
+     });
+
+
+
+

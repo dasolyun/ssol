@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viwport" content="width=device-width, initial-scale=1.0">
+    <title>영풍문고</title>
+
+    <link rel="stylesheet" href="main.css">
+ 
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
+
+
+  </head>
+
+  <body>
+  
+    <div id="wrap">
+  
+      <header>
+        <nav class="na1">
+          <ul>
+            <li><a href="#">마이페이지</a></li>
+            <li><a>|</a></li>
+            <li><a href="#">로그인</a></li>
+            <li><a>|</a></li>
+            <li><a href="#">회원인증/가입</a></li>
+            <li><a>|</a></li>
+            <li><a href="#">장바구니</a></li>
+            <li><a>|</a></li>
+            <li><a href="#">주문/배송조회</a></li>
+            <li><a>|</a></li>
+            <li><a href="#">고객센터</a></li>
+          </ul>
+        </nav>
+  
+        <div id="logo"><a href="index.html"><img src="mainimg/logo.PNG" alt=""></a></div>
+  
+        <div class="input_ul">
+          <div class="searchbox">
+  
+  
+            <select id="select">
+              <option value="a" selected>통합검색</option>
+              <option value="b">통합검색</option>
+              <option value="c">국내도서</option>
+              <option value="d">해외주문</option>
+              <option value="e">음반</option>
+              <option value="f">DVD</option>
+              <option value="g">GIFT</option>
+              <option value="h">오피스문구</option>
+            </select>
+  
+            <div class="line"></div>
+            <input type="text" placeholder="" class="intext">
+            <div class="down"> <i class="fas fa-angle-down down"></i>
+            </div>
+            <img src="mainimg/Magnifier.png" alt="">
+  
+          </div>
+        </div>
+      </header>
+  
+      <div id="nabb">
+        <nav id="na2">
+          <ul>
+            <li><a href="sub.html">베스트도서</a></li>
+            <li><a href="sub.html">신간도서</a></li>
+            <li><a href="sub.html">정가인하</a></li>
+            <li><a href="sub.html">국내도서</a></li>
+            <li><a href="sub.html">외국도서</a></li>
+            <li><a href="sub.html">EBOOK</a></li>
+            <li><a href="sub.html">기획/테마</a></li>
+            <li><a href="sub.html">문화행사</a></li>
+            <li><a href="sub.html">이벤트</a></li>
+            <li><a href="sub.html">회원혜택</a></li>
+          </ul>
+        </nav>
+      </div>
+  
+      <div id="slider">
+        <ul class="sliderimg">
+          <li><img src="mainimg/header.PNG" alt=""></li>
+          <li><img src="mainimg/header1.PNG" alt=""></li>
+        </ul>
+        <span class="prev1">&lt;</span>
+        <span class="next1">&gt;</span>
+      </div>
+  
+      <div id="todaybook">
+        <div class="today_title">
+          <h5>오늘의 책</h5>
+        </div>
+  
+        <ul class="today">
+          <li>
+            <div class="today1">
+              <div class="today1_title2"></div>
+              <div class="today1_price_authors">
+                <div class="authors1"></div>
+              </div>
+  
+              <div class="today1_contentswrap">
+                <div class="today1_contents"></div>
+              </div>
+  
+              <div class="today1_thumbnail"></div>
+              <span class="prev2">&lt;</span>
+              <span class="next2">&gt;</span>
+            </div>
+          </li>
+  
+          <li>
+            <div class="today2">
+              <div class="today2_title2"></div>
+              <div class="today2_price_authors">
+                <div class="authors2"></div>
+              </div>
+  
+              <div class="today2_contentswrap">
+                <div class="today2_contents"></div>
+              </div>
+  
+              <div class="today2_thumbnail"></div>
+  
+            </div>
+          </li>
+  
+          <li>
+            <div class="today3">
+              <div class="today3_title2"></div>
+              <div class="today3_price_authors">
+                <div class="authors3"></div>
+              </div>
+  
+              <div class="today3_contentswrap">
+                <div class="today3_contents"></div>
+              </div>
+  
+              <div class="today3_thumbnail"></div>
+  
+            </div>
+          </li>
+        </ul>
+      </div>
+  
+      <div id="mainbook">
+  
+        <h4>추천 도서</h4>
+  
+        <ul id="booklist">
+          <li>문학/인문</li>
+          <li>유아/아동</li>
+          <li>경제/교양</li>
+        </ul>
+  
+  
+        <h6 id="titlelist">문학/인문</h6>
+  
+        <article class="list_a">
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+        </article>
+  
+        <article class="list_b">
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+        </article>
+  
+  
+        <article class="list_c">
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+        </article>
+      </div>
+  
+      <div id="bestbook">
+        <h5>주간 베스트</h5>
+  
+        <div class="box1"></div>
+        <div class="box1"></div>
+        <div class="box1"></div>
+        <div class="box1"></div>
+        <div class="box1"></div>
+      </div>
+  
+      <br><br><br>
+      <div id="newbook"><img src="mainimg/b.PNG" alt=""></div>
+  
+  
+      <footer> 
+        <nav id="fnav">
+          <ul>
+            <li>회사소개</li>
+            <li>광고안내</li>
+            <li>고객센터</li>
+            <li>청약철회</li>
+            <li>입점문의</li>
+            <li>이용약관</li>
+            <li>개인정보처리방침</li>
+            <li>영상정보관리방침</li>
+            <li>이메일무단수집거부</li>
+          </ul>
+        </nav>
+      <div id="footer1">
+        <div id="logo1"><img src="mainimg/logo1.png" alt=""></div>
+  
+        <div id="a">
+          <p>회사명 : (주)영풍문고  |  대표이사 : 최영일</p>
+          <p>소재지 : 서울특별시 강남구 강남대로 542번지 (우)06110</p>
+          <p>사업자 등록번호 : 773-86-01800  |  통신판매업 신고번호 : 2020-서울강남-01007 [ 사업자정보확인 ]</p>
+          <p>개인정보관리 책임자 : 조순제  |  E-mail:customer@ypbooks.co.kr  |  대량주문 : 02-519-2860</p>
+          <p>COPYRIGHT © YOUNGPOONG BOOKSTORE INC. ALL RIGHTS RESERVED.</p>
+        </div>
+  
+        <div class="fbtn">
+          <button class="fbtn1">출판사용 통합관리 시스템<br>SCM</button>
+          <button class="fbtn2">고객센터<br>1544-9020</button>
+        </div>
+      </div>
+      </footer>
+  
+      <script>
+        function prev1() {
+          $('.sliderimg li:last').prependTo('.sliderimg');
+          $('.sliderimg').css('margin-left', -1903);
+          $('.sliderimg').stop().animate({ marginLeft: 0 }, 800);
+        }
+        function next1() {
+          $('.sliderimg').stop().animate({ marginLeft: -1903 }, function () {
+            $('.sliderimg li:first').appendTo('.sliderimg');
+            $('.sliderimg').css({ marginLeft: 0 });
+          });
+        }
+
+        function slide() {
+          $('.sliderimg').stop().animate({ marginLeft: -1903 }, function () {
+            $('.sliderimg li:first').appendTo('.sliderimg');
+            $('.sliderimg').css({ marginLeft: 0 });
+          });
+        }
+
+        setInterval(slide, 3000);
+
+        $('.prev1').click(function () {
+          prev1();
+        });
+
+        $('.next1').click(function () {
+          next1();
+        });
+
+
+      </script>
+  
+      <script>
+        $.ajax({
+          method: "GET",
+          url: "https://dapi.kakao.com/v3/search/book?target=title",
+          data: { query: "방탄소년단" },
+          headers: { Authorization: "KakaoAK 7470ede269996e5207582366ab1ad2a1" }
+        })
+
+          .done(function (msg) {
+            console.log(msg.documents[1].title);
+            console.log(msg.documents[1].thumbnail);
+
+            // 1
+
+
+            $(".today1_thumbnail").append("<img src='" + msg.documents[0].thumbnail + "'/>");
+            $(".today1_title2").append("<h3>" + msg.documents[0].title + "</h3>");
+            $(".authors1").append("<h6>" + msg.documents[0].authors[0] + "</h6>");
+
+
+
+            var str = msg.documents[0].contents;
+            var str2 = str.substring(0, 260);
+            $(".today1_contents").append("<p>" + str2 + "</p>");
+
+            //2
+
+
+            $(".today2_thumbnail").append("<img src='" + msg.documents[1].thumbnail + "'/>");
+            $(".today2_title2").append("<h3>" + msg.documents[1].title + "</h3>");
+            $(".authors2").append("<h6>" + msg.documents[1].authors[0] + "</h6>");
+
+
+
+            var str = msg.documents[1].contents;
+            var str2 = str.substring(0, 260);
+            $(".today2_contents").append("<p>" + str2 + "</p>");
+
+            //3
+
+
+            $(".today3_thumbnail").append("<img src='" + msg.documents[2].thumbnail + "'/>");
+            $(".today3_title2").append("<h3>" + msg.documents[2].title + "</h3>");
+            $(".authors3").append("<h6>" + msg.documents[2].authors[0] + "</h6>");
+
+
+
+            var str = msg.documents[2].contents;
+            var str2 = str.substring(0, 260);
+
+            $(".today3_contents").append("<p>" + str2 + "</p>");
+          });
+
+        function prev2() {
+          $('.today li:last').prependTo('.today');
+          $('.today').css('margin-left', -960);
+          $('.today').stop().animate({
+            marginLeft: 0
+          }, 800);
+        }
+
+        function next2() {
+          $('.today').stop().animate({
+            marginLeft: -960
+          }, function () {
+            $('.today li:first').appendTo('.today');
+            $('.today').css({
+              marginLeft: 0
+            });
+          });
+
+        }
+
+
+        function slide() {
+          $('.today').stop().animate({
+            marginLeft: -960
+          }, function () {
+            $('.today li:first').appendTo('.today');
+            $('.today').css({
+              marginLeft: 0
+            });
+          });
+
+        }
+
+        setInterval(slide, 3000);
+
+        $('.prev2').click(function () {
+          prev2();
+        });
+
+        $('.next2').click(function () {
+          next2();
+        });
+      </script>
+      <script>
+
+
+        // main ajax
+
+        $.ajax({
+          method: "GET",
+          url: "https://dapi.kakao.com/v3/search/book?target=title",
+          data: { query: "파리" },
+          headers: { Authorization: "KakaoAK 7b2300fc6315bb65035d1a3c7b49b161" }
+        })
+          .done(function (msg) {
+
+            var boxs = document.getElementsByClassName('box');
+
+            for (var i = 0; i < boxs.length; i++) {
+
+              $(".list_a >.box").eq(i).append('<a href="#">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
+              $(".list_a >.box").eq(i).append("<h3>" + '<a href="sub2.html">' + msg.documents[i].title + "</a>" + "</h3>");
+              $(".list_a >.box").eq(i).append("<h6>" + msg.documents[i].authors + "</h6>");
+
+
+              var str = msg.documents[i].contents;
+              var str2 = str.substring(0, 60);
+
+              $(".list_a >.box").eq(i).append("<p>" + '<a href="sub2.html">' + str2 + "</a>" + "</p>");
+              $(".list_a >.box").eq(i).append('<a href="#" class="btn">' + "click" + "</a>");
+
+            }
+
+          });
+
+
+        $.ajax({
+          method: "GET",
+          url: "https://dapi.kakao.com/v3/search/book?target=title",
+          data: { query: "유아" },
+          headers: { Authorization: "KakaoAK 7b2300fc6315bb65035d1a3c7b49b161" }
+        })
+          .done(function (msg) {
+
+            // for문 (8개)
+            var boxs = document.getElementsByClassName('box');
+
+
+            for (var i = 0; i < boxs.length; i++) {
+
+              $(".list_b >.box").eq(i).append('<a href="#">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
+              $(".list_b >.box").eq(i).append("<h3>" + '<a href="sub2.html">' + msg.documents[i].title + "</a>" + "</h3>");
+              $(".list_b >.box").eq(i).append("<h6>" + msg.documents[i].authors + "</h6>");
+
+
+              var str = msg.documents[i].contents;
+              var str2 = str.substring(0, 60);
+
+              $(".list_b >.box").eq(i).append("<p>" + '<a href="sub2.html">' + str2 + "</a>" + "</p>");
+              $(".list_b >.box").eq(i).append('<a href="#" class="btn">' + "click" + "</a>");
+
+            }
+          });
+
+
+        $.ajax({
+          method: "GET",
+          url: "https://dapi.kakao.com/v3/search/book?target=title",
+          data: { query: "경제" },
+          headers: { Authorization: "KakaoAK 7b2300fc6315bb65035d1a3c7b49b161" }
+        })
+          .done(function (msg) {
+
+            // for문 (8개)
+            var boxs = document.getElementsByClassName('box');
+
+
+            for (var i = 0; i < boxs.length; i++) {
+
+              $(".list_c >.box").eq(i).append('<a href="#">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
+              $(".list_c >.box").eq(i).append("<h3>" + '<a href="sub2.html">' + msg.documents[i].title + "</a>" + "</h3>");
+              $(".list_c >.box").eq(i).append("<h6>" + msg.documents[i].authors + "</h6>");
+
+
+              var str = msg.documents[i].contents;
+              var str2 = str.substring(0, 60);
+
+              $(".list_c >.box").eq(i).append("<p>" + '<a href="sub2.html">' + str2 + "</a>" + "</p>");
+              $(".list_c >.box").eq(i).append('<a href="#" class="btn">' + "click" + "</a>");
+
+            }
+
+          });
+      </script>
+  
+      <script>
+        $(function () {
+
+          //multipage
+          $('#booklist li:nth-of-type(1)').mouseover(function () {
+            $('.list_a').show();
+            $('.list_b').hide();
+            $('.list_c').hide();
+          });
+
+
+          $('#booklist li:nth-of-type(2)').mouseover(function () {
+            $('.list_a').hide();
+            $('.list_b').show();
+            $('.list_c').hide();
+          });
+
+
+          $('#booklist li:nth-of-type(3)').mouseover(function () {
+            $('.list_a').hide();
+            $('.list_b').hide();
+            $('.list_c').show();
+          });
+
+
+          // title 
+          $("#booklist li").click(function () {
+            $("#titlelist").text($(this).text());
+          });
+
+        });
+      </script>
+  
+      <script>
+        $.ajax({
+          method: "GET",
+          url: "https://dapi.kakao.com/v3/search/book?target=title",
+          data: {
+            query: "돈"
+          },
+          headers: {
+            Authorization: "KakaoAK 7b2300fc6315bb65035d1a3c7b49b161"
+          }
+        })
+          .done(function (msg) {
+
+            console.log(msg.documents[1].title);
+            console.log(msg.documents[1].thumbnail);
+
+
+
+
+
+
+
+
+            var divs = document.getElementsByClassName('box1');
+
+            for (var i = 0; i < divs.length; i++) {
+
+              $(".box1").eq(i).append("<img src='" + msg.documents[i].thumbnail + "'/>");
+
+
+
+            }
+
+
+
+          });
+      </script>
+    </div>
+  </body>
+</html>

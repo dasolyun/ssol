@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viwport" content="width=device-width, initial-scale=1.0">
+  <title>영풍문고</title>
+  <link rel="stylesheet" href="sub.css">
+
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
+
+
+</head>
+
+<body>
+
+  <div id="wrap">
+
+    <div id="newbook"><img src="mainimg/b.PNG" alt=""></div>
+
+    <header>
+      <nav class="na1">
+        <ul>
+          <li><a href="#">마이페이지</a></li>
+          <li><a>|</a></li>
+          <li><a href="#">로그인</a></li>
+          <li><a>|</a></li>
+          <li><a href="#">회원인증/가입</a></li>
+          <li><a>|</a></li>
+          <li><a href="#">장바구니</a></li>
+          <li><a>|</a></li>
+          <li><a href="#">주문/배송조회</a></li>
+          <li><a>|</a></li>
+          <li><a href="#">고객센터</a></li>
+        </ul>
+      </nav>
+
+      <div id="logo"><a href="index.html"><img src="mainimg/logo.PNG" alt=""></a></div>
+
+      <div class="input_ul">
+        <div class="searchbox">
+
+
+          <select id="select">
+            <option value="a" selected>통합검색</option>
+            <option value="b">통합검색</option>
+            <option value="c">국내도서</option>
+            <option value="d">해외주문</option>
+            <option value="e">음반</option>
+            <option value="f">DVD</option>
+            <option value="g">GIFT</option>
+            <option value="h">오피스문구</option>
+          </select>
+
+          <div class="line"></div>
+          <input type="text" placeholder="" class="intext">
+          <div class="down"> <i class="fas fa-angle-down down"></i>
+          </div>
+          <img src="mainimg/Magnifier.png" alt="">
+
+        </div>
+      </div>
+    </header>
+
+    <div id="nabb">
+      <nav id="na2">
+        <ul>
+          <li><a href="#">베스트도서</a></li>
+          <li><a href="#">신간도서</a></li>
+          <li><a href="#">정가인하</a></li>
+          <li><a href="#">국내도서</a></li>
+          <li><a href="#">외국도서</a></li>
+          <li><a href="#">EBOOK</a></li>
+          <li><a href="#">기획/테마</a></li>
+          <li><a href="#">문화행사</a></li>
+          <li><a href="#">이벤트</a></li>
+          <li><a href="#">회원혜택</a></li>
+        </ul>
+      </nav>
+    </div>
+
+
+    <div id="mainwrap">
+
+
+
+      <div class="slider_wrap_2">
+        <div class="slider_thumbnail">
+          <div class="slider_thumbnail_img"></div>
+          <div class="slider_thumbnail_buttonbox">
+            <button>미리보기</button>
+            <button>영업점 재고 및 위치 확인</button>
+          </div>
+        </div>
+        <div class="slider_text_wrap">
+          <div class="slider_text_title_authors">
+            <div class="slider_text_title"></div>
+            <div class="slider_text_authors">
+              <div class="slider_text_authors1"></div>
+              <div class="slider_text_authors2"></div>
+            </div>
+          </div>
+          <div class="slider_text_price">
+            <div class="slider_text_price1"></div>
+            <div class="slider_text_price2"></div>
+            <div class="slider_text_price3">
+              <p>적립금　　　<span>2,000원</span> (5%)</p>
+            </div>
+            <div class="slider_text_price4">
+              <p>배송일정　<span>　3일 이내 출고 예정 (주말, 공휴일 제외)</span></p>
+              <button>주문 수량 변경시 안내</button>
+              <button>배송안내</button>
+
+            </div>
+            <div class="slider_text_price5">
+              <p>쿠폰 및 결제혜택</p><button>확인하기</button>
+            </div>
+          </div>
+          <div class="slider_naver">
+            <div class="slider_naver1">
+              <div class="slider_naver1_wrap">
+                <div class="slider_naver1_1"><img src="subimg/naver-pay.png" alt=""></div>
+                <div class="slider_naver1_2">
+                  <div class="pay2"><img src="subimg/naver-pay2.png" alt=""></div>
+                </div>
+                <div class="slider_naver1_3">
+                  <div class="pay3"><img src="subimg/naver-jjim.png" alt=""></div>
+                </div>
+              </div>
+              <div class="slider_naver1_4">
+                <div class="slider_naver1_4_box">
+                  <p>[네이버페이]</p>
+                  <p>주문/취소/배송 안내></p>
+                </div>
+              </div>
+
+
+            </div>
+            <div class="slider_naver2">
+              <div class="slider_naver2_1">
+                <p>멤버십 <span>첫달 무료가입하고 추가 4%!</span></p>
+              </div>
+              <div class="slider_naver2_2">
+                <span class="prev1">&lt;</span>
+                <span class="next1">&gt;</span>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider_button_box">
+          <div class="slider_button_box_1">
+            <div class="slider_button_box_input">
+              <p>주문수량</p><input type="text" name="Quantity" id="Quantity" size="3" maxlength="3" value="1"
+                onkeydown="only_numeric()">
+            </div>
+            <button class="sb1">장바구니 담기</button>
+            <button class="sb2">바로구매</button>
+            <button class="sb3">나우드림</button>
+            <button class="sb4">내서재 담기</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div id="main2">
+      <table class="sub2_table">
+        <tbody>
+          <tr>
+            <th class="sub2_table_th1">크기</th>
+            <td class="sub2_table_td1">
+              <p>기타규격</p>
+            </td>
+          </tr>
+          <tr>
+            <th class="sub2_table_th2">제품구성</th>
+            <td class="sub2_table_td2">
+              <p>단행본</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div id="main3">
+      <div class="sub3_title">
+        <h3>이 책을 구매하시는분들이 함께 구매하신 상품입니다.</h3>
+      </div>
+      <div class="sub3_book">
+        <div class="sub3_book1">
+          <div class="sub3_bookimg"></div>
+          <div class="sub3_booktitle"></div>
+          <div class="sub3_bookpublisher"></div>
+        </div>
+
+        <div class="sub3_book1">
+          <div class="sub3_bookimg"></div>
+          <div class="sub3_booktitle"></div>
+          <div class="sub3_bookpublisher"></div>
+        </div>
+
+        <div class="sub3_book1">
+          <div class="sub3_bookimg"></div>
+          <div class="sub3_booktitle"></div>
+          <div class="sub3_bookpublisher"></div>
+        </div>
+
+        <div class="sub3_book1">
+          <div class="sub3_bookimg"></div>
+          <div class="sub3_booktitle"></div>
+          <div class="sub3_bookpublisher"></div>
+        </div>
+
+        <div class="sub3_book1">
+          <div class="sub3_bookimg"></div>
+          <div class="sub3_booktitle"></div>
+          <div class="sub3_bookpublisher"></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="main4">
+      <ul class="sub4_list">
+        <li class="sub4_list1"><a href="#main4" class="a">이 책의 분류</a></li>
+        <li class="sub4_list1"><a href="#main5">도서정보</a></li>
+        <li class="sub4_list1"><a href="#main6">목차 및 본문</a></li>
+        <li class="sub4_list1"><a href="#main7">저자 및 역자 정보</a></li>
+        <li class="sub4_list1"><a href="#main8">독자서평</a></li>
+      </ul>
+
+      <div class="sub4_text">
+        <p>국내도서 > 문학 > 문고/전집 > 외국문학전집 </p>
+      </div>
+    </div>
+
+    <div id="main5">
+      <ul class="sub5_list">
+        <li class="sub5_list1"><a href="#main4">이 책의 분류</a></li>
+        <li class="sub5_list1"><a href="#main5" class="b">도서정보</a></li>
+        <li class="sub5_list1"><a href="#main6">목차 및 본문</a></li>
+        <li class="sub5_list1"><a href="#main7">저자 및 역자 정보</a></li>
+        <li class="sub5_list1"><a href="#main8">독자서평</a></li>
+      </ul>
+
+      <div class="sub5_text"></div>
+    </div>
+
+    <div id="main6">
+      <ul class="sub6_list">
+        <li class="sub6_list1"><a href="#main4">이 책의 분류</a></li>
+        <li class="sub6_list1"><a href="#main5">도서정보</a></li>
+        <li class="sub6_list1"><a href="#main6" class="c">목차 및 본문</a></li>
+        <li class="sub6_list1"><a href="#main7">저자 및 역자 정보</a></li>
+        <li class="sub6_list1"><a href="#main8">독자서평</a></li>
+      </ul>
+
+      <div class="sub6_text"></div>
+    </div>
+
+    <div id="main7">
+      <ul class="sub7_list">
+        <li class="sub7_list1"><a href="#main4">이 책의 분류</a></li>
+        <li class="sub7_list1"><a href="#main5">도서정보</a></li>
+        <li class="sub7_list1"><a href="#main6">목차 및 본문</a></li>
+        <li class="sub7_list1"><a href="#main7" class="d">저자 및 역자 정보</a></li>
+        <li class="sub7_list1"><a href="#main8">독자서평</a></li>
+    </ul>
+
+    <div class="sub7_text"></div>
+  </div>
+
+    <div id="main8">
+      <ul class="sub8_list">
+        <li class="sub8_list1"><a href="#main4">이 책의 분류</a></li>
+        <li class="sub8_list1"><a href="#main5">도서정보</a></li>
+        <li class="sub8_list1"><a href="#main6">목차 및 본문</a></li>
+        <li class="sub8_list1"><a href="#main7">저자 및 역자 정보</a></li>
+        <li class="sub8_list1"><a href="#main8" class="e">독자서평</a></li>
+      </ul>
+
+      <div class="sub8_text">
+        <div class="s6_text">
+          <div class="s6_text1">
+            <h4>독자서평 쓰기</h4>
+            <h6>로그인을 하시면 독자서평을 쓰실 수 있습니다.</h6>
+          </div>
+          <div class="s6_star">
+            <div class="star_box">
+              <div class="inputall">
+                <span>도서평점</span>
+                <input type="radio" value="1" name="radio_revRate" class="b0"><img src="subimg/star.gif" alt="">
+                <input type="radio" value="2" name="radio_revRate" class="writeRadio"><img src="subimg/star.gif" alt=""><img
+                  src="subimg/star.gif" alt="">
+                <input type="radio" value="3" name="radio_revRate" class="writeRadio" checked="checked"><img
+                  src="subimg/star.gif" alt=""><img src="subimg/star.gif" alt=""><img src="subimg/star.gif" alt="">
+                <input type="radio" value="4" name="radio_revRate" class="writeRadio"><img src="subimg/star.gif" alt=""><img
+                  src="subimg/star.gif" alt=""><img src="subimg/star.gif" alt=""><img src="subimg/star.gif" alt="">
+                <input type="radio" value="5" name="radio_revRate" class="writeRadio"><img src="img/star.gif" alt=""><img
+                  src="subimg/star.gif" alt=""><img src="subimg/star.gif" alt=""><img src="subimg/star.gif" alt=""><img
+                  src="subimg/star.gif" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="s6_main">
+            <div class="s6_main_title">
+              <p>내용</p>
+            </div>
+            <div class="s6_main_body">
+              <textarea name="review_content" id="review_content" class="writeTxt"></textarea>
+              <button>등록</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+  
+
+
+  <footer>
+    <nav id="fnav">
+      <ul>
+        <li>회사소개</li>
+        <li>광고안내</li>
+        <li>고객센터</li>
+        <li>청약철회</li>
+        <li>입점문의</li>
+        <li>이용약관</li>
+        <li>개인정보처리방침</li>
+        <li>영상정보관리방침</li>
+        <li>이메일무단수집거부</li>
+      </ul>
+    </nav>
+    <div id="footer1">
+      <div id="logo1"><img src="mainimg/logo1.png" alt=""></div>
+
+      <div id="a">
+        <p>회사명 : (주)영풍문고 | 대표이사 : 최영일</p>
+        <p>소재지 : 서울특별시 강남구 강남대로 542번지 (우)06110</p>
+        <p>사업자 등록번호 : 773-86-01800 | 통신판매업 신고번호 : 2020-서울강남-01007 [ 사업자정보확인 ]</p>
+        <p>개인정보관리 책임자 : 조순제 | E-mail:customer@ypbooks.co.kr | 대량주문 : 02-519-2860</p>
+        <p>COPYRIGHT © YOUNGPOONG BOOKSTORE INC. ALL RIGHTS RESERVED.</p>
+      </div>
+
+      <div class="fbtn">
+        <button class="fbtn1">출판사용 통합관리 시스템<br>
+          SCM
+        </button>
+        <button class="fbtn2">고객센터<br>
+          1544-9020
+        </button>
+      </div>
+    </div>
+  </footer>
+  
+  <script>
+    $.ajax({
+      method: "GET",
+      url: "https://dapi.kakao.com/v3/search/book?target=title",
+      data: {
+        query: "파리대왕"
+      },
+      headers: {
+        Authorization: "KakaoAK 7b2300fc6315bb65035d1a3c7b49b161"
+      }
+    })
+      .done(function (msg) {
+
+        console.log(msg.documents[1].title);
+        console.log(msg.documents[1].thumbnail);
+
+
+
+
+
+
+
+        // for문 (8개)
+        var divs = document.getElementsByClassName('slider_thumbnail_img');
+
+        for (var i = 0; i < divs.length; i++) {
+
+          $(".slider_thumbnail_img").eq(i).append("<img src='" + msg.documents[0].thumbnail + "'/>");
+
+
+
+        }
+
+
+
+      });
+
+
+    $.ajax({
+      method: "GET",
+      url: "https://dapi.kakao.com/v3/search/book?target=title",
+      data: {
+        query: "파리대왕"
+      },
+      headers: {
+        Authorization: "KakaoAK 7b2300fc6315bb65035d1a3c7b49b161"
+      }
+    })
+      .done(function (msg) {
+
+        console.log(msg.documents[1].title);
+        console.log(msg.documents[1].thumbnail);
+
+
+
+
+
+
+
+        // for문 (8개)
+        var divs = document.getElementsByClassName('slider_text_title');
+
+        for (var i = 0; i < divs.length; i++) {
+
+
+          $(".slider_text_title").eq(i).append("<h2>" + msg.documents[0].title + "</h2>");
+
+
+        }
+
+
+
+      });
+
+
+
+
+    $.ajax({
+      method: "GET",
+      url: "https://dapi.kakao.com/v3/search/book?target=title",
+      data: {
+        query: "파리대왕"
+      },
+      headers: {
+        Authorization: "KakaoAK 7b2300fc6315bb65035d1a3c7b49b161"
+      }
+    })
+      .done(function (msg) {
+
+        console.log(msg.documents[1].title);
+        console.log(msg.documents[1].thumbnail);
+
+
+
+
+
+
+
+        // for문 (8개)
+        var divs = document.getElementsByClassName('slider_text_authors1');
+
+        for (var i = 0; i < divs.length; i++) {
+
+
+          $(".slider_text_authors1").append("<p>" + "<span>" + "저자: " + "</span>" + msg.documents[0].authors[0] + "　|　" + "</p>");
+          $(".slider_text_authors1").append("<p>" + "<span>" + " 출판사: " + "</span>" + msg.documents[0].publisher + "　|　" + "</p>");
+          $(".slider_text_authors1").append("<p>" + "<span>" + "역자: " + "</span>" + msg.documents[0].translators + "</p>");
+        }
+
+
+
+      });
+
+
+
+
+    $.ajax({
+      method: "GET",
+      url: "https://dapi.kakao.com/v3/search/book?target=title",
+      data: {
+        query: "파리대왕"
+      },
+      headers: {
+        Authorization: "KakaoAK 7b2300fc6315bb65035d1a3c7b49b161"
+      }
+    })
+      .done(function (msg) {
+
+        console.log(msg.documents[1].title);
+        console.log(msg.documents[1].thumbnail);
+
+
+
+
+
+
+
+        // for문 (8개)
+        var divs = document.getElementsByClassName('slider_text_authors2');
+
+        for (var i = 0; i < divs.length; i++) {
+
+
+          $(".slider_text_authors2").append("<p>" + msg.documents[0].status + "　|　" + "</p>");
+          $(".slider_text_authors2").append("<p>" + msg.documents[0].datetime + "　|　" + "</p>");
+          $(".slider_text_authors2").append("<p>" + " ISBN-13: " + msg.documents[0].isbn + "</p>");
+
+        }
+
+
+
+      });
+
+
+    $.ajax({
+      method: "GET",
+      url: "https://dapi.kakao.com/v3/search/book?target=title",
+      data: {
+        query: "파리대왕"
+      },
+      headers: {
+        Authorization: "KakaoAK 7b2300fc6315bb65035d1a3c7b49b161"
+      }
+    })
+      .done(function (msg) {
+
+        console.log(msg.documents[1].title);
+        console.log(msg.documents[1].thumbnail);
+
+
+
+
+
+
+
+        // for문 (8개)
+        var divs = document.getElementsByClassName('slider_text_price1');
+
+        for (var i = 0; i < divs.length; i++) {
+
+
+          $(".slider_text_price1").append("<p>" + "정가　　　　" + "<span>" + msg.documents[0].price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + "</span>" + "원" + "</p>");
+
+        }
+
+
+
+      });
+
+    $.ajax({
+      method: "GET",
+      url: "https://dapi.kakao.com/v3/search/book?target=title",
+      data: {
+        query: "파리대왕"
+      },
+      headers: {
+        Authorization: "KakaoAK 7b2300fc6315bb65035d1a3c7b49b161"
+      }
+    })
+      .done(function (msg) {
+
+        console.log(msg.documents[1].title);
+        console.log(msg.documents[1].thumbnail);
+
+
+
+
+
+
+
+        // for문 (8개)
+        var divs = document.getElementsByClassName('slider_text_price2');
+
+        for (var i = 0; i < divs.length; i++) {
+
+
+          $(".slider_text_price2").append("<p>" + "판매가　　　" + "<span>" + msg.documents[0].sale_price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + "</span>" + "원" + "<span>" + " (10%할인)" + "</span>" + "</p>");
+
+        }
+
+
+
+      });
+
+  </script>
+  
+  <script>
+    $.ajax({
+        method: "GET",
+        url: "https://dapi.kakao.com/v3/search/book?target=title",
+        data: {
+            query: "포토샵"
+        },
+        headers: {
+            Authorization: "KakaoAK 7b2300fc6315bb65035d1a3c7b49b161"
+        }
+    })
+    .done(function (msg) {
+
+        console.log(msg.documents[1].title);
+        console.log(msg.documents[1].thumbnail);
+
+
+
+
+
+
+
+        // for문 (8개)
+        var divs = document.getElementsByClassName('sub3_bookimg');
+
+        for (var i = 0; i < divs.length; i++) {
+
+            $(".sub3_bookimg").eq(i).append("<img src='" + msg.documents[i].thumbnail + "'/>");
+
+
+
+        }
+
+
+
+    });
+
+    $.ajax({
+      method: "GET",
+      url: "https://dapi.kakao.com/v3/search/book?target=title",
+      data: {
+        query: "문학"
+      },
+      headers: {
+        Authorization: "KakaoAK 7b2300fc6315bb65035d1a3c7b49b161"
+      }
+    })
+      .done(function (msg) {
+
+        console.log(msg.documents[1].title);
+        console.log(msg.documents[1].thumbnail);
+
+        var divs = document.getElementsByClassName('sub3_booktitle');
+
+        for (var i = 0; i < divs.length; i++) {
+          $(".sub3_booktitle").eq(i).append("<h5>" + msg.documents[i].title + "</h5>");
+        }
+      });
+
+    $.ajax({
+      method: "GET",
+      url: "https://dapi.kakao.com/v3/search/book?target=title",
+      data: {
+        query: "문학"
+      },
+      headers: {
+        Authorization: "KakaoAK 7b2300fc6315bb65035d1a3c7b49b161"
+      }
+    })
+      .done(function (msg) {
+
+        console.log(msg.documents[1].title);
+        console.log(msg.documents[1].thumbnail);
+
+        var divs = document.getElementsByClassName('sub3_bookpublisher');
+
+        for (var i = 0; i < divs.length; i++) {
+          $(".sub3_bookpublisher").eq(i).append("<p>" + msg.documents[i].publisher + "<p>");
+        }
+      });
+
+
+  </script>
+</body>
+
+</html>
